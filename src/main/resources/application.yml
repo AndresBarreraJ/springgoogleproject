@@ -1,0 +1,23 @@
+spring:
+  server:
+    port: 8080
+    servlet:
+      context-path: /restproject
+  datasource:
+    password: Barrera22
+    url: jdbc:mysql://localhost:3306/restproject
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1029519495252-6ncvhc3ba5327rpsbbfkj3rerpo3lkij.apps.googleusercontent.com
+            client-secret: i9B3zZTcWZNTetPM626RFUs7
+            scope:
+              - email
+              - profile
+#?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
